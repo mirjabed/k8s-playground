@@ -142,8 +142,9 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm upgrade --install --create-namespace --namespace nginx-controller nginx-controller ingress-nginx/ingress-nginx
 ```
 
+## Deploy a local helm chart
 ```bash
-helm upgrade --install --create-namespace --namespace demo password-generato .
+helm upgrade --install --create-namespace --namespace demo password-generator .
 ```
 
 [def]: https://docs.docker.com/engine/install/ubuntu/
