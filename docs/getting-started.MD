@@ -142,9 +142,9 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm upgrade --install --create-namespace --namespace nginx-controller nginx-controller ingress-nginx/ingress-nginx
 ```
 
-## Deploy a local helm chart
+## Deploy the password generator app
 ```bash
-helm upgrade --install --create-namespace --namespace demo password-generator .
+kubectl apply -f https://raw.githubusercontent.com/ahsanemon/k8s-playground/main/password-generator/k8s-manifests/password-generator.yaml
 ```
 
 [def]: https://docs.docker.com/engine/install/ubuntu/
