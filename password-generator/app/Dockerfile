@@ -11,7 +11,7 @@ COPY requirements.txt requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Copy the local package files to the container's workspace
-COPY . /app
+COPY . .
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
